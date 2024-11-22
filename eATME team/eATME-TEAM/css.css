@@ -29,6 +29,7 @@ font-weight: 800;
 color: black;
 font-size: 18px;
 padding: 2px;
+list-style: none;
 }
 .navbar li:hover{
 color: blue;
