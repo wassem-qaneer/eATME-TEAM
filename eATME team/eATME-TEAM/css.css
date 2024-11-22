@@ -1,0 +1,173 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding-top: 1px;
+}
+header{
+width:100%;
+height: 450px;
+position: relative;
+background-image: url(./empty-product-display-table-with-blurred-pizzeria-background_1000348-3902.webp);
+background-size: cover;
+background-position: center;  
+}
+.navbar{
+position: absolute;
+top: 12px;
+left: 2%;
+right: 2%;
+display: flex;
+justify-content: space-around;
+padding: 1px;
+background-color: rgba(166, 166, 166, 70%);
+border-radius: 10px;
+height:30px;
+width: 95%;
+}
+.navbar li {
+font-weight: 800;
+color: black;
+font-size: 18px;
+padding: 2px;
+}
+.navbar li:hover{
+color: blue;
+background-color: white;
+border-radius: 10px;
+width: 90px;
+}
+.hero{
+position: relative;
+}
+.sbar{
+position: absolute;
+margin-top: 19%;
+margin-left: 39%;
+padding: 10px;
+border-radius: 8px;
+}
+.sbar input{
+color: white;
+background: rgba(255, 255, 255, 0.189);
+width: 400px;
+height: 20px;
+padding: 10px;
+border: none;
+border-radius: 8px;
+}
+.catg{
+display: flex;
+position: relative;
+justify-content: space-around;
+}
+.category{
+width: 180px;
+height: 180px;
+background-color: darkgray;
+border-radius: 50%;
+text-align: center;
+font-weight: 800;
+font-size: 18px;
+margin-bottom: 15px;
+}
+.category span {
+background-color: rgba(0, 0, 0, 90%);
+color: #fff;
+padding: 4px 25px;
+border-radius: 5px;
+}
+.category img {
+padding-bottom: 5px;
+width: 180px;
+height: 180px;
+border-radius: 50%;
+transition: 0.3s ease-in-out;
+overflow: hidden;
+}
+.category img:hover{
+filter: blur(4px);
+}
+.featured{
+left: 2%;
+display: flex;
+position: relative;
+justify-content: space-between;
+}
+.restaurant-grid {
+margin-bottom: 60px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap:15px;
+}
+.restaurant {
+width: 190px;
+height: 100%;
+background: #f9f9f9;
+padding: 1rem;
+text-align: center;
+border: 1px solid #d7cece92;
+border-radius: 5px;
+}
+#f{
+margin-left: 28px;
+display: inline-block;
+background-color: rgba(0, 0, 0, 90%);
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+}
+.heart{
+color: rgba(0, 0, 0, 25%);
+font-size: 40px;
+}
+.heart:hover{
+color: rgba(0, 0, 0, 0.550);
+}
+.heart:active{
+color: red;
+}
+.restaurant img {
+width: 100%;
+height: auto;
+border-radius: 5px;
+}
+#h{
+margin-left: 28px;
+display: inline-block;
+background-color: rgba(0, 0, 0, 90%);
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+}
+#i{
+margin-left: 28px;
+display: inline-block;
+background-color: rgba(0, 0, 0, 90%);
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+}
+.ads{
+left: 2%;
+display: flex;
+justify-content: space-between;
+}
+.ads img{
+width: 30%;
+height: auto;
+border-radius: 20px;
+}
+footer {
+text-align: center;
+background: #3333332c;
+color: rgb(0, 0, 0);
+padding: 1rem;
+}
+footer nav {
+margin-top: 0.5rem;
+}
+footer nav a {
+color: rgb(0, 0, 0);
+margin: 0 0.5rem;
+text-decoration: none;
+}
