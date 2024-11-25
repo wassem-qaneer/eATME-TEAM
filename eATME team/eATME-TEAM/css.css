@@ -2,6 +2,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
   padding-top: 1px;
+  overflow-x: hidden;
 }
 header{
 width:100%;
@@ -11,32 +12,121 @@ background-image: url(./empty-product-display-table-with-blurred-pizzeria-backgr
 background-size: cover;
 background-position: center;  
 }
-.navbar{
-position: absolute;
-top: 12px;
-left: 2%;
-right: 2%;
-display: flex;
-justify-content: space-around;
-padding: 1px;
-background-color: rgba(166, 166, 166, 70%);
-border-radius: 10px;
-height:30px;
-width: 95%;
+/* ------------------------------------------ */
+.navbar {
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  left: 0%;
+  right: 0%;
+  background-color: rgb(243, 240, 240);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
 }
-.navbar li {
-font-weight: 800;
-color: black;
-font-size: 18px;
-padding: 2px;
-list-style: none;
+.navbar h1{
+  color: #528585;
+  font-size: 20px;
+  font-weight: 1000;
+  padding: 5px;
+  margin: 10px;
 }
-.navbar li:hover{
-color: blue;
-background-color: white;
-border-radius: 10px;
-width: 90px;
+.navbar a {
+  position: relative;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 5px;
+  margin: 0;
+  list-style: none;
+  text-underline-offset: none;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
 }
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  background-color: #528585;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar a:hover:after {
+  width: 100%;
+}
+.navbar a:hover{
+  color: #528585;
+}
+.navbar .icons {
+  padding: 5px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.icons :hover{
+  color: #528585;
+}
+.icons .d1,
+.icons .d2 {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: none;
+  z-index: 100;
+}
+
+.icons .d1 li,
+.icons .d2 li {
+  padding: 10px 15px;
+}
+.icons .d1 li a,
+.icons .d2 li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.icons .d1 li a:hover,
+.icons .d2 li a:hover {
+  color: #528585;
+}
+
+.icons i.fa-bars:hover + .d1,
+.icons i.fa-user:hover + .d2 {
+  display: block;
+}
+
+.icons .d1:hover,
+.icons .d2:hover {
+  display: block;
+}
+
+.icons i:hover + .d1,
+.icons i:hover + .d2 {
+  display: block;
+}
+/* ------------------------------ */
 .hero{
 position: relative;
 }
