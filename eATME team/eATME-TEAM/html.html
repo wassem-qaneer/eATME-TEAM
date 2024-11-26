@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport">
+  <<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home Page</title>
   <link rel="stylesheet" href="./css.css">
   <script src="https://kit.fontawesome.com/1459085fa6.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
   
@@ -32,27 +33,389 @@
       </div>
  </nav>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body>
+
+ <!-- دلاي التحميل باستخدام شريط التقدم من بوتستراب -->
+ <div id="loader" class="loader-container">
+  <progress class="progress is-small is-danger" max="100" value="0" id="progress-bar">
+  </progress>
+</div>
+
+<div id="content" style="display: none;">
+
+  <div class="notification is-primary is-light" style="z-index: 9998;">
+    <button class="delete"></button>
+    Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum <br>
+    <a href="./html.html" style="margin: 35px; text-decoration:none; color: brown; font-weight: 900;">go it</a>
+  </div>
+
+
+  <header>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="./image.png" alt="Your Logo" width="150" height="auto">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+  
+        <a class="navbar-item">
+          Documentation
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item is-selected">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
 <div class="hero">
   <div class="sbar"><label><input type="text"></label></div>
 </div>
 </header>
+
 <br>
 <main>
-
-  <section class="catg">
+  <div class="tabs is-centered">
+    <ul>
+      <li class="is-active">
+        <a>
+          <span class="icon is-small"
+            ><i class="fas fa-image" aria-hidden="true"></i
+          ></span>
+          <span>Pictures</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <span class="icon is-small"
+            ><i class="fas fa-music" aria-hidden="true"></i
+          ></span>
+          <span>Music</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <span class="icon is-small"
+            ><i class="fas fa-film" aria-hidden="true"></i
+          ></span>
+          <span>Videos</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <span class="icon is-small"
+            ><i class="far fa-file-alt" aria-hidden="true"></i
+          ></span>
+          <span>Documents</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<section class="catg">
     <div class="category"> <img src="./برجر.jpg"><span>Burger</span></div>
     <div class="category"> <img src="./بيتزا.webp"><span>Pizza</span></div>
     <div class="category"> <img src="./عصير.webp"><span>Drinks</span></div>
     <div class="category"> <img src="./شاورما.jpg"><span>Shawarma</span></div>
     <div class="category"> <img src="./حلويات.jpg"><span>Sweets</span></div>
-  </section>
+  </section> 
+
 <br>
 <br>
 <br>
 <hr>
 <h2 id="f">Featured Restaurants</h2>
 <br>
-  <section class="featured">
+
+<!--<div class="container">
+  <div class="row">
+
+<div class="card mb-3 col-sm-6">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./مطعم-الرصافة.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3 col-sm-6">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./مطعم-الرصافة.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3 col-sm-6">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./مطعم-الرصافة.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3 col-sm-6">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./مطعم-الرصافة.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3 col-sm-6">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./مطعم-الرصافة.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3 col-sm-6 ">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./مطعم-الرصافة.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>-->
+
+<div class="columns is-mobile">
+  <div class="column is-one-seventh">
+    <!-- Content for the first column -->
+  </div>
+  <div class="column is-one-seventh">
+    <!-- Content for the second column -->
+  </div>
+  <div class="column is-one-seventh">
+    <!-- Content for the third column -->
+  </div>
+  <div class="column is-one-seventh">
+    <!-- Content for the fourth column -->
+  </div>
+  <div class="column is-one-seventh">
+    <!-- Content for the fifth column -->
+  </div>
+  <div class="column is-one-seventh">
+    <!-- Content for the sixth column -->
+  </div>
+  <div class="column is-one-seventh">
+    <!-- Content for the seventh column -->
+  </div>
+</div>
+
+
+<br><br><br>
+
+<div class="columns is-multiline">
+  <div class="column is-one-quarter">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="./مطعم2.jpg" alt="Placeholder image" />
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="./برجر.jpg" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-4">John Smith</p>
+            <p class="subtitle is-6">@johnsmith</p>
+          </div>
+        </div>
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+          <br />
+          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-one-quarter">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="./مطعم2.jpg" alt="Placeholder image" />
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="./بيتزا.webp" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-4">John Smith</p>
+            <p class="subtitle is-6">@johnsmith</p>
+          </div>
+        </div>
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+          <br />
+          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-one-quarter">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="./مطعم-الرصافة.jpg" alt="Placeholder image" />
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="./حلويات.jpg" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-4">John Smith</p>
+            <p class="subtitle is-6">@johnsmith</p>
+          </div>
+        </div>
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+          <br />
+          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-one-quarter">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="./مطعم1.jpg" alt="Placeholder image" />
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="./شاورما.jpg" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-4">John Smith</p>
+            <p class="subtitle is-6">@johnsmith</p>
+          </div>
+        </div>
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+          <br />
+          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!--<section class="featured">
     <div class="restaurant-grid">
       <div class="restaurant">
         <img src="./مطعم1.jpg" alt="Restaurant 1">
@@ -75,19 +438,40 @@
         <span class="heart">♥</span>
       </div>
     </div>
-  </section>
-  <hr>
-  <section class="fined-restaurants">
-    <h2 id="h">Fined Restaurants</h2>
-    <div class="placeholder-grid">
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
+  </section>-->
+
+  <div class="card-group">
+    <div class="card">
+      <img src="./مطعم-الرصافة.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">مطعم الرصافة</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary"><i class="fa-solid fa-heart fa-xl" style="color: #ff1900;"></i><i class="fa-regular fa-star fa-xl"></i></small>
+      </div>
     </div>
-  </section>
+    <div class="card">
+      <img src="./مطعم1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">مطعم ابو محمود</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary"><i class="fa-solid fa-heart fa-xl" style="color: #ff1900;"></i><i class="fa-regular fa-star fa-xl"></i></small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./مطعم2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">كشك المحبه</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary"><i class="fa-solid fa-heart fa-xl" style="color: #ff1900;"></i><i class="fa-regular fa-star fa-xl"></i></small>
+      </div>
+    </div>
+  </div>
 
 <hr>
 <br>
@@ -102,13 +486,45 @@
   <br>
 </main>
 <footer>
-  <p>© eATMe</p>
+  <div class="card-header">
+    <div class="container text-center">
+      <div class="row row-cols-4">
+        <div class="col"><a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></div>
+        <div class="col"><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
+        <div class="col"><a href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a></div>
+        <div class="col"><a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><a href="#"><i class="fa-solid fa-phone fa-xl"></i> <p style="display: inline-block; color: white; margin:5px;">+970594916221</p></a>
+      <a href="#"><i class="fa-regular fa-envelope fa-xl"></i><p style="display: inline-block; color: white;  margin:5px;"> qnyrwsym5@gmail.com</p></a></h5>
+    <p class="card-text">جميع الحقوق محفوظه  ©eATMe 2024 </p>
+    <a href="#" class="btn-up">Go Up</a>
+  </div>
+  <div class="card-footer text-body-secondary">
+    ©eATMe
+  </div>
+</footer>
+<!--<footer>
   <nav>
-    <a href="#">Page</a>
-    <a href="#">Page</a>
-    <a href="#">Page</a>
-    <a href="#">Page</a>
+    <span><a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></span>
+    <div class="a1">
+    <a href="#"><i class="fa-solid fa-phone fa-xl"></i> +970594916221</a>
+    <a href="#"><i class="fa-regular fa-envelope fa-xl"></i> qnyrwsym5@gmail.com</a></div>
   </nav>
 </footer>
+  <p id="A">© eATMe</p>
+</footer>-->
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./j.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
